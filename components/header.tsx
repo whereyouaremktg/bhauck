@@ -27,13 +27,18 @@ export default function Header() {
           <a href="/services" className="uppercase text-sm tracking-wider hover:opacity-70">
             SERVICES
           </a>
+          <a href="/booking" className="uppercase text-sm tracking-wider hover:opacity-70">
+            BOOKING
+          </a>
           <a href="/contact" className="uppercase text-sm tracking-wider hover:opacity-70">
             CONTACT
           </a>
-          <button className="bg-[#E4D096] text-black px-6 py-3 uppercase text-sm tracking-wider hover:opacity-80 flex items-center gap-2">
-            GET IN TOUCH
-            <span>→</span>
-          </button>
+          <a href="/booking">
+            <button className="bg-[#E4D096] text-black px-6 py-3 uppercase text-sm tracking-wider hover:opacity-80 flex items-center gap-2">
+              GET IN TOUCH
+              <span>→</span>
+            </button>
+          </a>
         </nav>
       </div>
     </header>

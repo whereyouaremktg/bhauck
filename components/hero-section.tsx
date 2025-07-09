@@ -12,10 +12,12 @@ export default function HeroSection() {
               Bradley Hauck, PA-C combines years of plastic surgery experience with personalized care to help you
               achieve your beauty and wellness goals
             </p>
-            <button className="bg-[#E4D096] text-black px-8 py-4 uppercase text-sm tracking-wider hover:opacity-80 flex items-center gap-2 mt-8">
-              GET IN TOUCH
-              <span>→</span>
-            </button>
+            <a href="/booking">
+              <button className="bg-[#E4D096] text-black px-8 py-4 uppercase text-sm tracking-wider hover:opacity-80 flex items-center gap-2 mt-8">
+                GET IN TOUCH
+                <span>→</span>
+              </button>
+            </a>
           </div>
         </div>
       </div>

@@ -9,10 +9,12 @@ export default function ContactSection() {
             Schedule your consultation today and discover how we can help you achieve your aesthetic and wellness goals.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
-            <button className="bg-[#E4D096] text-black px-8 py-4 uppercase text-sm tracking-wider hover:opacity-80 flex items-center justify-center gap-2">
-              BOOK CONSULTATION
-              <span>→</span>
-            </button>
+            <a href="/booking">
+              <button className="bg-[#E4D096] text-black px-8 py-4 uppercase text-sm tracking-wider hover:opacity-80 flex items-center justify-center gap-2">
+                BOOK CONSULTATION
+                <span>→</span>
+              </button>
+            </a>
             <button className="border border-white/20 text-white px-8 py-4 uppercase text-sm tracking-wider hover:opacity-80">
               CALL (435) 555-0123
             </button>
