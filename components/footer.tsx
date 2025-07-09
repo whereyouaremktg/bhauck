@@ -14,6 +14,9 @@ export default function Footer() {
             <a href="/services" className="uppercase text-sm tracking-wider hover:opacity-70">
               SERVICES
             </a>
+            <a href="/booking" className="uppercase text-sm tracking-wider hover:opacity-70">
+              BOOKING
+            </a>
             <a href="/contact" className="uppercase text-sm tracking-wider hover:opacity-70">
               CONTACT
             </a>
