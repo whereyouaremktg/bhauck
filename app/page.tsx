@@ -1,5 +1,5 @@
 import Header from "@/components/header"
-import LuxuryHeroSection from "@/components/luxury-hero-section"
+import HeroSection from "@/components/hero-section"
 import BenefitsSection from "@/components/benefits-section"
 import ServicesSection from "@/components/services-section"
 import TestimonialsSection from "@/components/testimonials-section"
@@ -11,7 +11,7 @@ export default function HomePage() {
     <div className="min-h-screen">
       <Header />
       <main>
-        <LuxuryHeroSection />
+        <HeroSection />
         <BenefitsSection />
         <ServicesSection />
         <TestimonialsSection />
