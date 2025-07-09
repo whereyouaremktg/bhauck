@@ -1,43 +1,27 @@
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-
 export default function HeroSection() {
   return (
-    <section className="relative h-screen flex items-center justify-center text-center text-white">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover"
-        poster="/placeholder.svg?width=1920&height=1080"
-      >
-        {/* In a real project, you would source this video from a CDN */}
-        <source
-          src="https://cdn.dribbble.com/userupload/12094319/file/original-4669981a233d3a0ed97362c1b8d369a8.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
-      <div className="absolute top-0 left-0 w-full h-full bg-black/50" />
-      <div className="relative z-10 max-w-4xl mx-auto px-4">
-        <h1 className="text-4xl md:text-6xl font-bold font-serif leading-tight mb-4">
-          Everyone here at Revive Beauty & Wellness welcomes you to experience the premium and personalized care you
-          deserve.
-        </h1>
-        <p className="text-lg md:text-xl font-sans mb-8">
-          At Revive you can find all you need for your beauty & wellness needs.
-        </p>
-        <div className="flex flex-col items-center gap-4">
-          <Button
-            size="lg"
-            className="bg-[#E4D096] hover:bg-[#E4D096]/80 text-black rounded-lg px-10 py-6 text-lg font-bold"
-          >
-            Book Now
-          </Button>
-          <Badge variant="secondary" className="bg-white/20 text-white backdrop-blur-sm rounded-full px-4 py-1 text-sm">
-            Free consultation on all services!
-          </Badge>
+    <section className="min-h-screen flex">
+      <div className="w-full lg:w-3/5 bg-[#F5F2ED] flex items-center">
+        <div className="container mx-auto px-6 lg:px-12 py-20">
+          <div className="max-w-2xl">
+            <span className="text-sm uppercase tracking-wider text-black/60">• 5 SLOTS AVAILABLE</span>
+            <h1 className="font-serif text-5xl lg:text-7xl mt-6 leading-tight">
+              Premium medical aesthetics & wellness
+            </h1>
+            <p className="text-lg text-black/70 mt-6 leading-relaxed">
+              Bradley Hauck, PA-C combines years of plastic surgery experience with personalized care to help you
+              achieve your beauty and wellness goals
+            </p>
+            <button className="bg-[#E4D096] text-black px-8 py-4 uppercase text-sm tracking-wider hover:opacity-80 flex items-center gap-2 mt-8">
+              GET IN TOUCH
+              <span>→</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className="hidden lg:block lg:w-2/5 bg-[#2C2C2C] relative">
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="text-white/20 text-6xl font-serif">REVIVE</div>
         </div>
       </div>
     </section>

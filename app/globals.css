@@ -24,6 +24,8 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
     --radius: 0.5rem;
+    --font-inter: "Inter", sans-serif;
+    --font-playfair: "Playfair Display", serif;
   }
 
   .dark {
@@ -55,6 +57,7 @@
   }
   body {
     @apply bg-background text-foreground font-sans;
+    font-family: var(--font-inter), sans-serif;
   }
   h1,
   h2,
@@ -63,5 +66,6 @@
   h5,
   h6 {
     @apply font-serif;
+    font-family: var(--font-playfair), serif;
   }
 }

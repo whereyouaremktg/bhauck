@@ -16,9 +16,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Revive Beauty & Wellness | St. George, UT",
-  description:
-    "Experience premium and personalized care for all your beauty and wellness needs at Revive in St. George.",
+  title: "Revive Health | Medical Spa & Wellness",
+  description: "Premium medical aesthetics & wellness with Bradley Hauck, PA-C",
     generator: 'v0.dev'
 }
 
@@ -29,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
-      <body>{children}</body>
+      <body className="font-sans text-black">{children}</body>
     </html>
   )
 }

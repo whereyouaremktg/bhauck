@@ -1,19 +1,21 @@
 import Header from "@/components/header"
 import HeroSection from "@/components/hero-section"
-import TeamSection from "@/components/team-section"
-import ServicesPreview from "@/components/services-preview"
-import TestimonialsCarousel from "@/components/testimonials-carousel"
+import BenefitsSection from "@/components/benefits-section"
+import ServicesSection from "@/components/services-section"
+import TestimonialsSection from "@/components/testimonials-section"
+import ContactSection from "@/components/contact-section"
 import Footer from "@/components/footer"
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col min-h-screen bg-white text-gray-800">
+    <div className="min-h-screen">
       <Header />
       <main>
         <HeroSection />
-        <TeamSection />
-        <ServicesPreview />
-        <TestimonialsCarousel />
+        <BenefitsSection />
+        <ServicesSection />
+        <TestimonialsSection />
+        <ContactSection />
       </main>
       <Footer />
     </div>

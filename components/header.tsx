@@ -1,58 +1,40 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { SpadeIcon as Spa } from "lucide-react"
 
 export default function Header() {
-  const [isSticky, setSticky] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
-      setSticky(window.scrollY > 10)
+      setIsScrolled(window.scrollY > 50)
     }
     window.addEventListener("scroll", handleScroll)
-    return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
+    return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const navLinks = [
-    { href: "#", label: "Home" },
-    { href: "#services", label: "Services" },
-    { href: "#specials", label: "Specials" },
-    { href: "#contact", label: "Contact Us" },
-    { href: "#testimonials", label: "Testimonials & Reviews" },
-  ]
-
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isSticky ? "bg-white shadow-md" : "bg-transparent"
-      }`}
-    >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          <Link href="/" className="flex items-center gap-2">
-            <Spa className="h-8 w-8 text-yellow-500" />
-            <span className="text-xl font-bold font-serif tracking-tight">Revive</span>
-          </Link>
-          <nav className="hidden lg:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-          <div className="flex items-center">
-            <Button className="bg-[#E4D096] hover:bg-[#E4D096]/80 text-black rounded-lg px-6 py-2.5">Book Now</Button>
-          </div>
-        </div>
+    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-white" : "bg-white/0"}`}>
+      <div className="container mx-auto px-6 py-6 flex justify-between items-center">
+        <div className="font-serif text-2xl">REVIVE HEALTH</div>
+        <nav className="hidden md:flex items-center gap-8">
+          <a href="/" className="uppercase text-sm tracking-wider hover:opacity-70">
+            HOME
+          </a>
+          <a href="/about" className="uppercase text-sm tracking-wider hover:opacity-70">
+            ABOUT
+          </a>
+          <a href="/services" className="uppercase text-sm tracking-wider hover:opacity-70">
+            SERVICES
+          </a>
+          <a href="/contact" className="uppercase text-sm tracking-wider hover:opacity-70">
+            CONTACT
+          </a>
+          <button className="bg-[#E4D096] text-black px-6 py-3 uppercase text-sm tracking-wider hover:opacity-80 flex items-center gap-2">
+            GET IN TOUCH
+            <span>→</span>
+          </button>
+        </nav>
       </div>
     </header>
   )
