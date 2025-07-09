@@ -38,7 +38,7 @@ const testimonials = [
 
 export default function TestimonialsCarousel() {
   return (
-    <section id="testimonials" className="py-20 md:py-32 bg-gray-50">
+    <section id="testimonials" className="py-20 md:py-32 bg-[#F5F2ED]">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-4xl font-bold mb-4">What Our Clients Say</h2>

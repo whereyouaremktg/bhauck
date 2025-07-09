@@ -31,7 +31,7 @@ export default function HeroSection() {
         <div className="flex flex-col items-center gap-4">
           <Button
             size="lg"
-            className="bg-yellow-500 hover:bg-yellow-600 text-black rounded-lg px-10 py-6 text-lg font-bold"
+            className="bg-[#E4D096] hover:bg-[#E4D096]/80 text-black rounded-lg px-10 py-6 text-lg font-bold"
           >
             Book Now
           </Button>

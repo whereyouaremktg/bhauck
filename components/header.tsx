@@ -50,7 +50,7 @@ export default function Header() {
             ))}
           </nav>
           <div className="flex items-center">
-            <Button className="bg-yellow-500 hover:bg-yellow-600 text-black rounded-lg px-6 py-2.5">Book Now</Button>
+            <Button className="bg-[#E4D096] hover:bg-[#E4D096]/80 text-black rounded-lg px-6 py-2.5">Book Now</Button>
           </div>
         </div>
       </div>

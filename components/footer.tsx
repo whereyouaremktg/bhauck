@@ -4,7 +4,7 @@ import { SpadeIcon as Spa, Twitter, Instagram, Facebook } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer id="contact" className="bg-gray-900 text-white">
+    <footer id="contact" className="bg-[#2C2C2C] text-white">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
@@ -53,7 +53,7 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="font-bold mb-4">Ready to Revive?</h4>
-            <Button className="bg-yellow-500 hover:bg-yellow-600 text-black rounded-lg w-full mb-4">Book Now</Button>
+            <Button className="bg-[#E4D096] hover:bg-[#E4D096]/80 text-black rounded-lg w-full mb-4">Book Now</Button>
             <div className="flex space-x-4">
               <Link href="#" className="text-gray-400 hover:text-white">
                 <Twitter />
